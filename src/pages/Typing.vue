@@ -71,20 +71,6 @@
             //TODO: clear the timer here
             if(event.key === 'Tab' ){
 
-              
-
-              
-              
-              vm.minutes = 0
-              vm.seconds = 0
-              entries = 0
-              correctEntries = 0;
-
-
-              vm.changeCurrentTextId()
-
-              clearInterval(vm.interval)
-              vm.interval = null
               vm.resetText()
               return
             }
@@ -223,6 +209,14 @@
         }
         this.textInput = ''
         this.changeCurrentText()
+
+        this.minutes = 0
+        this.seconds = 0
+        this.entries = 0
+        this.correctEntries = 0;
+
+        clearInterval(this.interval)
+        this.interval = null
       },
       handleTheStopWatch(){
         this.seconds++
