@@ -69,6 +69,10 @@
 
         function onPress(event) {
             //TODO: clear the timer here
+            
+            
+
+            
             if(event.key === 'Tab' ){
               vm.resetText()
               return
