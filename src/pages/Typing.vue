@@ -70,10 +70,23 @@
         function onPress(event) {
             //TODO: clear the timer here
             if(event.key === 'Tab' ){
-                clearInterval(vm.interval)
-                vm.interval = null
-                vm.resetText()
-                return
+
+              
+
+              
+              
+              vm.minutes = 0
+              vm.seconds = 0
+              entries = 0
+              correctEntries = 0;
+
+
+              vm.changeCurrentTextId()
+
+              clearInterval(vm.interval)
+              vm.interval = null
+              vm.resetText()
+              return
             }
 
             if(event.key === 'Enter' || event.key === 'Escape'
